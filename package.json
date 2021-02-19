@@ -1,0 +1,22 @@
+{
+  "name": "my-presentation",
+  "version": "1.0.0",
+  "description": "Website to present myselfas a front end web developer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexvkcr/my-presentation.git"
+  },
+  "author": "alexvkcr@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexvkcr/my-presentation/issues"
+  },
+  "homepage": "https://github.com/alexvkcr/my-presentation#readme",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
