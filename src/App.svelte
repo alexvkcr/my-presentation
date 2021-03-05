@@ -1,5 +1,5 @@
 <script>
-	let name = 'world';;
+  import Tabs from "./components/Tabs.svelte";
 </script>
 
-<h1>Hello {name}!</h1>
+<Tabs />
