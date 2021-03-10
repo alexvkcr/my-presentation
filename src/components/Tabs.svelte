@@ -1,13 +1,14 @@
 <script>
   import Tab from "./Tab.svelte";
+  import { createEventDispatcher } from "svelte";
 </script>
 
 <div class="tabs">
-  <Tab tabName="Me" />
   <Tab tabName="My CV" />
   <Tab tabName="My Projects" />
+  <Tab tabName="Testimonials" />
   <Tab tabName="Contact me" />
-  <Tab class="last-item" tabName="Fashion mode" />
+  <Tab type="last-item" tabName="Fashion mode" />
 </div>
 
 <style>
@@ -20,9 +21,5 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: baseline;
-  }
-  .last-item {
-    order: 4; /* default is 0 */
-    color: red;
   }
 </style>
