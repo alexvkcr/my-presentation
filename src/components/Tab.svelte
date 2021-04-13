@@ -4,7 +4,7 @@
 
   function fashionMode(e) {
     if (e.target.outerText == "Fashion mode") {
-      console.log("clicked");
+      console.log("clicked fashion Mode");
     }
   }
 </script>
