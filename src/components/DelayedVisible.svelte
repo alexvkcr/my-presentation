@@ -7,8 +7,18 @@
   onMount(() => setTimeout(() => (shown = true), waitInMili));
 </script>
 
-{#if shown}
+<div class:hidden={!shown}>
   <slot />
-{/if}
+</div>
 
-<style></style>
+<style>
+  div {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.3s linear, opacity 0.3s linear;
+  }
+  .hidden {
+    visibility: hidden;
+    opacity: 0;
+  }
+</style>
