@@ -1,21 +1,17 @@
 <script>
+  import Router from "svelte-spa-router";
+
   import Tabs from "./components/Tabs.svelte";
+  import Error from "./components/Error.svelte";
   import Delayed from "./components/Delayed.svelte";
+
+  const routes = {
+    "/": Tabs,
+    "*": Error,
+  };
 </script>
 
-<Tabs />
-<Delayed waitInMili={2500}>
-  <div class="img-container">
-    <img src="/img/alexWeb.gif " alt="foto del autor, Alejandro" />
-  </div>
-</Delayed>
+<Router {routes} />
 
 <style>
-  .img-container {
-    display: flex;
-    justify-content: center;
-  }
-  img {
-    width: 45vw;
-  }
 </style>
