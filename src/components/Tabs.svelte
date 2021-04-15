@@ -1,25 +1,25 @@
 <script>
   import Tab from "./Tab.svelte";
   import { createEventDispatcher } from "svelte";
-  import DelayedVisible from "./DelayedVisible.svelte";
+  import Delayed from "./Delayed.svelte";
 </script>
 
 <div class="tabs">
-  <DelayedVisible waitInMili={1000}>
+  <Delayed waitInMili={500}>
     <Tab tabName="My CV" />
-  </DelayedVisible>
-  <DelayedVisible waitInMili={2000}>
+  </Delayed>
+  <Delayed waitInMili={1500}>
     <Tab tabName="My Projects" />
-  </DelayedVisible>
-  <DelayedVisible waitInMili={3000}>
+  </Delayed>
+  <Delayed waitInMili={2500}>
     <Tab tabName="Testimonials" />
-  </DelayedVisible>
-  <DelayedVisible waitInMili={4000}>
+  </Delayed>
+  <Delayed waitInMili={3500}>
     <Tab tabName="Contact me" />
-  </DelayedVisible>
-  <DelayedVisible waitInMili={6000}>
+  </Delayed>
+  <Delayed waitInMili={4500}>
     <Tab type="last-item" tabName="Fashion mode" />
-  </DelayedVisible>
+  </Delayed>
 </div>
 
 <style>

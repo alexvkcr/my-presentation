@@ -15,7 +15,7 @@
   div {
     visibility: visible;
     opacity: 1;
-    transition: visibility 0.3s linear, opacity 0.3s linear;
+    transition: visibility 0.8s linear, opacity 0.8s linear;
   }
   .hidden {
     visibility: hidden;
