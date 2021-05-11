@@ -21,7 +21,22 @@
 
   .last-item {
     order: 4; /* default is 0 */
-    color: red;
+
+    padding: 0 0.6em;
+
+    color: white;
+    background-color: black;
+    border: 4px solid grey;
+    border-color: grey;
+
+    border-radius: 7px;
+  }
+
+  .last-item:hover {
+    color: black;
+    background-color: lightgrey;
+
+    border: 4px solid yellow;
   }
 
   @media (max-width: 600px) {

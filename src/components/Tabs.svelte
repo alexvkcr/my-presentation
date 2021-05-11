@@ -18,7 +18,7 @@
     <Tab tabName="Contact me" />
   </Delayed>
   <Delayed waitInMili={4500}>
-    <Tab type="last-item" tabName="Fashion mode" />
+    <Tab type="last-item" tabName="Night mode" />
   </Delayed>
 </div>
 
