@@ -1,7 +1,6 @@
 # to-do
 
-Delayed Appear makes comps to appear after time
-Now working on a delay only for the visibility
+Working on meaking cannons appear when hovering a button
 
 # my-presentation
 

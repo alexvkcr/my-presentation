@@ -65,6 +65,7 @@
     margin: 0;
   }
   .ocean {
+    z-index: 1;
     margin: 0;
     max-height: 100vh;
     overflow: hidden;
