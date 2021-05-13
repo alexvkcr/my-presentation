@@ -26,7 +26,7 @@
   .tabs {
     width: calc(100% - 20px);
     height: 50px;
-    margin: 20px;
+    padding: 20px;
 
     display: flex;
     justify-content: space-between;

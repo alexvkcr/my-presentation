@@ -9,5 +9,9 @@
     background-repeat: repeat-x;
     height: 100px;
     width: 100vw;
+
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 </style>

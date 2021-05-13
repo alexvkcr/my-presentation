@@ -67,9 +67,9 @@
   .ocean {
     z-index: 1;
     margin: 0;
-    max-height: 100vh;
+    max-height: 30vh;
     overflow: hidden;
-    padding: 29em 0 0 0;
+    padding: 57.3vh 0 0 0;
   }
   .content {
     font-family: "Lato", sans-serif;
@@ -78,7 +78,6 @@
     text-align: center;
     min-height: 75vh;
     margin: -0.1em 0 0 0;
-    padding: 1em;
     color: #eee;
     font-size: 2em;
     font-weight: 300;
