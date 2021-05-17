@@ -4,14 +4,14 @@
 
 <style>
   .stage {
-    background-image: url("img/stage.gif");
+    background-image: url("../img/stage.gif");
 
     background-repeat: repeat-x;
-    height: 100px;
+    height: 200px;
     width: 100vw;
 
     position: absolute;
-    top: 0;
+    top: 80%;
     left: 0;
   }
 </style>

@@ -2,20 +2,29 @@
   import Tab from "./Tab.svelte";
   import { createEventDispatcher } from "svelte";
   import Delayed from "./Delayed.svelte";
+  import Hover from "./Hover.svelte";
 </script>
 
 <div class="tabs">
   <Delayed waitInMili={500}>
-    <Tab tabName="My CV" />
+    <Hover>
+      <Tab tabName="My CV" />
+    </Hover>
   </Delayed>
   <Delayed waitInMili={1500}>
-    <Tab tabName="My Projects" />
+    <Hover>
+      <Tab tabName="My Projects" />
+    </Hover>
   </Delayed>
   <Delayed waitInMili={2500}>
-    <Tab tabName="Testimonials" />
+    <Hover>
+      <Tab tabName="Testimonials" />
+    </Hover>
   </Delayed>
   <Delayed waitInMili={3500}>
-    <Tab tabName="Contact me" />
+    <Hover>
+      <Tab tabName="Contact me" />
+    </Hover>
   </Delayed>
   <Delayed waitInMili={4500}>
     <Tab type="last-item" tabName="Night mode" />
