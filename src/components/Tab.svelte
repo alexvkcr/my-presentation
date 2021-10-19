@@ -1,5 +1,8 @@
 <script>
+  import Hover from "./Hover.svelte";
+
   export let tabName = "";
+  export let specialHover = false;
   export let type = "normal";
 
   function fashionMode(e) {
@@ -9,9 +12,17 @@
   }
 </script>
 
-<h1 class={type === "last-item" ? "last-item" : ""} on:click={fashionMode}>
-  {tabName}
-</h1>
+{#if specialHover}
+  <Hover>
+    <h1 class={type === "last-item" ? "last-item" : ""} on:click={fashionMode}>
+      {tabName}
+    </h1>
+  </Hover>
+  {:else}
+  <h1 class={type === "last-item" ? "last-item" : ""} on:click={fashionMode}>
+    {tabName}
+  </h1>
+{/if}
 
 <style>
   h1 {
@@ -26,10 +37,12 @@
 
     color: white;
     background-color: black;
+    
     border: 4px solid grey;
     border-color: grey;
-
     border-radius: 7px;
+    
+    transition: 1.0s;
   }
 
   .last-item:hover {
